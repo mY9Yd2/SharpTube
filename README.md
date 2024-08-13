@@ -14,6 +14,8 @@ I don't guarantee that this library will work in every scenario, or that I will 
 
 ## Example/Usage
 
+[NuGet - SharpTube](https://www.nuget.org/packages/SharpTube)
+
 [SharpTube.Example/Program.cs](SharpTube.Example/Program.cs)
 
 ## License
