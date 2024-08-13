@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>SharpTube</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Kovács József Miklós</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageDescription>Get YouTube channel/video/playlist information.</PackageDescription>
+    <PackageProjectUrl>https://github.com/mY9Yd2/SharpTube</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mY9Yd2/SharpTube.git</RepositoryUrl>
+    <PackageTags>youtube;video;youtubeextractor</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="SharpTube.Tests" />
+  </ItemGroup>
+
+</Project>

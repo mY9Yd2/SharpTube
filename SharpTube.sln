@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpTube", "SharpTube\SharpTube.csproj", "{423CFD9F-A7FC-4BDB-8E47-65F3DD19B092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpTube.Tests", "SharpTube.Tests\SharpTube.Tests.csproj", "{DDBE7362-2315-4D80-9F82-6C589249D234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpTube.Example", "SharpTube.Example\SharpTube.Example.csproj", "{5D213868-3633-466E-B02C-94779F42FCFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{423CFD9F-A7FC-4BDB-8E47-65F3DD19B092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423CFD9F-A7FC-4BDB-8E47-65F3DD19B092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423CFD9F-A7FC-4BDB-8E47-65F3DD19B092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423CFD9F-A7FC-4BDB-8E47-65F3DD19B092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBE7362-2315-4D80-9F82-6C589249D234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBE7362-2315-4D80-9F82-6C589249D234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBE7362-2315-4D80-9F82-6C589249D234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBE7362-2315-4D80-9F82-6C589249D234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D213868-3633-466E-B02C-94779F42FCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D213868-3633-466E-B02C-94779F42FCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D213868-3633-466E-B02C-94779F42FCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D213868-3633-466E-B02C-94779F42FCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
