@@ -27,7 +27,7 @@ public class SharpTubeTest
                 .ToString()
                 .Should()
                 .BeEquivalentTo($"https://www.youtube.com/playlist?list={playlistId}");
-        playlist.Thumbnail
+        playlist.Thumbnail?
                 .ToString()
                 .Should()
                 .NotBeNullOrEmpty();

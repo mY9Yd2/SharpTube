@@ -31,7 +31,7 @@ public class Playlist : BaseCollector
     /// <summary>
     /// Gets the URL of the playlist's thumbnail image.
     /// </summary>
-    public Uri Thumbnail { get; init; }
+    public Uri? Thumbnail { get; init; }
 
     /// <summary>
     /// Gets the list of video Ids in the playlist.
@@ -49,8 +49,15 @@ public class Playlist : BaseCollector
         Url = new Uri($"https://www.youtube.com/playlist?list={playlistId}");
         Name = Collect(data, PlaylistPatterns.Name).FirstOrDefault(string.Empty);
         VideoCount = Convert.ToInt32(Collect(data, PlaylistPatterns.VideoCount).FirstOrDefault("0"));
-        Thumbnail = new Uri(Collect(data, PlaylistPatterns.Thumbnail).FirstOrDefault(string.Empty));
+        Thumbnail = GetUri(Collect(data, PlaylistPatterns.Thumbnail).FirstOrDefault());
         VideoIds = Collect(data, PlaylistPatterns.VideoId);
+    }
+
+    private static Uri? GetUri(string? url)
+    {
+        return string.IsNullOrEmpty(url)
+                ? null
+                : new Uri(url);
     }
 
     /// <summary>
