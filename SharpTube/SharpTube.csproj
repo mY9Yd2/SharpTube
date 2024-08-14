@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>SharpTube</PackageId>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <Authors>Kovács József Miklós</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageDescription>Get YouTube channel/video/playlist information.</PackageDescription>
