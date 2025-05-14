@@ -156,8 +156,9 @@ public class SharpTubeTest
             { "Twitter", new Uri("https://twitter.com/ironmouse") },
             { "Twitch", new Uri("https://twitch.tv/ironmouse") },
             { "TikTok", new Uri("https://tiktok.com/@ironmouse") },
+            { "Clips", new Uri("https://youtube.com/@MouseClipsOfficial") },
             { "VODS", new Uri("https://youtube.com/channel/UC733wqgq7RmafDY7qEACsBg") },
-            { "Patreon", new Uri("https://patreon.com/ironmouse") }
+            { "Patreon", new Uri("https://patreon.com/ironmouse") },
         };
 
         // Act
@@ -191,7 +192,7 @@ public class SharpTubeTest
                 .Should()
                 .NotBeNullOrEmpty()
                 .And
-                .BeEquivalentTo("https://yt3.googleusercontent.com/ytc/AIdro_lnpcdCnJi5j9aL2TtXam65hLVm2Fb9wG6kYUyo9E-yi0E=s900-c-k-c0x00ffffff-no-rj");
+                .BeEquivalentTo("https://yt3.googleusercontent.com/ytc/AIdro_kRmBUGJyEGZ46bHqlcqAo-yEntsTm2c0vmDzQb3jck978=s900-c-k-c0x00ffffff-no-rj");
         channel.ChannelId
                 .Should()
                 .NotBeNullOrEmpty()
