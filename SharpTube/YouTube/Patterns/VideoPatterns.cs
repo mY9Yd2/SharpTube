@@ -1,16 +1,25 @@
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace SharpTube.YouTube.Patterns;
 
-public static partial class VideoPatterns
+/// <summary>
+/// Provides compiled regular expression patterns for extracting structured data from raw YouTube
+/// video metadata, such as video ID, title, duration, timestamp, channel information, tags, and thumbnails.
+/// </summary>
+/// <remarks>
+/// This static partial class utilizes the <see cref="GeneratedRegexAttribute"/> to compile
+/// regular expressions at build time, enhancing performance. The patterns are specifically
+/// tailored to parse YouTube video-related HTML or JSON responses.
+/// </remarks>
+internal static partial class VideoPatterns
 {
-    public static readonly Regex DisplayId = DisplayIdRegex();
-    public static readonly Regex FullTitle = FullTitleRegex();
-    public static readonly Regex Duration = DurationRegex();
-    public static readonly Regex Timestamp = TimestampRegex();
-    public static readonly Regex ChannelId = ChannelIdRegex();
-    public static readonly Regex Tags = TagsRegex();
-    public static readonly Regex Thumbnail = ThumbnailRegex();
+    internal static readonly Regex DisplayId = DisplayIdRegex();
+    internal static readonly Regex FullTitle = FullTitleRegex();
+    internal static readonly Regex Duration = DurationRegex();
+    internal static readonly Regex Timestamp = TimestampRegex();
+    internal static readonly Regex ChannelId = ChannelIdRegex();
+    internal static readonly Regex Tags = TagsRegex();
+    internal static readonly Regex Thumbnail = ThumbnailRegex();
 
     [GeneratedRegex("videoId\":\"(.*?)\"")]
     private static partial Regex DisplayIdRegex();
